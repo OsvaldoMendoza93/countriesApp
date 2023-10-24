@@ -1,0 +1,18 @@
+<h2>Por Capital</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+      <app-search-input
+        placeholder="Buscar capital..."
+        [initialValue]="initialValue"
+        (onDebounce)="onSearch($event)"></app-search-input>  
+    </div>
+</div>
+
+<hr>
+<div class="row">
+    <div class="col">
+       <app-country-table [countries]="countries"></app-country-table>
+    </div> 
+</div>
